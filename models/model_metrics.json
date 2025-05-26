@@ -1,0 +1,55 @@
+{
+    "content_based": {
+        "best_params": {
+            "n_components": 50
+        },
+        "best_score": 0.0016972426462212487,
+        "final_metrics": {
+            "mse": 0.0001904211694575005,
+            "mae": 0.0018888471359290574,
+            "reconstruction_error": 0.0018888471359290546
+        }
+    },
+    "neural_network": {
+        "best_params": {
+            "hidden_layers": 1,
+            "hidden_units_0": 188,
+            "dropout_rate": 0.3206032861460393,
+            "learning_rate": 0.0007744349364063668
+        },
+        "best_score": 0.01324271603075007,
+        "final_metrics": {
+            "mse": 0.0004121572427381942,
+            "mae": 0.015780135007049553,
+            "reconstruction_error": 0.015780135007049508
+        }
+    },
+    "gradient_boosting": {
+        "best_params": {
+            "n_estimators": 50,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_depth": 3,
+            "learning_rate": 0.1
+        },
+        "best_score": 0.7285938251893574,
+        "final_metrics": {
+            "mse": 0.7285938251893574,
+            "mae": 0.2619975554844027,
+            "reconstruction_error": 0.020538347872783
+        }
+    },
+    "svm": {
+        "best_params": {
+            "kernel": "linear",
+            "gamma": "scale",
+            "C": 1
+        },
+        "best_score": 0.1413004227837301,
+        "final_metrics": {
+            "mse": 0.1413004227837301,
+            "mae": 0.06970028136586905,
+            "reconstruction_error": 0.7705746024157824
+        }
+    }
+}
