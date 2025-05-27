@@ -23,7 +23,7 @@ def get_recommendations():
     print("Received data:", data)
     movie_ids = data.get('movie_ids', [])
     n_recommendations = data.get('n_recommendations', 5)
-    model_name = data.get('model_name', 'knn')
+    model_name = data.get('model_name', 'content_based')
     
     try:
         recommendations = recommender.get_recommendations(

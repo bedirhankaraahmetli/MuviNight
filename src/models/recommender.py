@@ -145,7 +145,8 @@ class MovieRecommender:
     def search_movies(self, query, limit=10):
         """Search movies by title"""
         query = query.lower()
-        matches = self.movies[self.movies['title'].str.lower().str.contains(query)]
+        # Ensure all titles are strings and handle NaN
+        matches = self.movies[self.movies['title'].astype(str).str.lower().str.contains(query, na=False)]
         return matches.head(limit)[
             ['id', 'title', 'overview', 'poster_path', 'release_date', 'vote_average']
         ].to_dict('records')

@@ -46,7 +46,7 @@ MuviNight/
 │   ├── api/             # Flask API
 │   │   └── api.py
 │   └── utils/           # Utility functions
-├── frontend-react/      # React frontend
+├── frontend/            # React frontend
 ├── requirements.txt     # Python dependencies
 └── README.md           # Project documentation
 ```
@@ -94,7 +94,7 @@ python src/api/api.py
 
 7. Start the frontend (in a new terminal):
 ```bash
-cd frontend-react
+cd frontend
 npm install
 npm start
 ```
