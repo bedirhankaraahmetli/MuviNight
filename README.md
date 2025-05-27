@@ -2,6 +2,17 @@
 
 A sophisticated movie recommendation system that combines multiple machine learning approaches to provide personalized movie recommendations. The system utilizes content-based filtering, collaborative filtering, and deep learning techniques to deliver accurate and diverse movie suggestions.
 
+## Dataset
+
+The project uses the TMDB 10,000 Movies Dataset from Kaggle. You can download it from:
+[TMDB 10,000 Movies Dataset](https://www.kaggle.com/datasets/apkaayush/tmdb-10000-movies-dataset)
+
+After downloading:
+1. Place the `dataset.csv` file in the root directory of the project
+2. The data pipeline will automatically process it when you run the setup
+
+Note: The dataset is not included in the repository due to its size (268MB). Please download it separately from the link above.
+
 ## Features
 
 - **Hybrid Recommendation System**
